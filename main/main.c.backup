@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/spi_master.h"
+#include "driver/gpio.h"
+#include "esp_log.h"
+
+static const char *TAG = "SPI_DUMPER";
+
+// SPI pins
+#define PIN_NUM_MISO 19
+#define PIN_NUM_MOSI 23
+#define PIN_NUM_CLK  18
+#define PIN_NUM_CS   5
+
+void app_main() {
+    printf("\n=== ESP32 SPI Flash Dumper ===\n");
+    printf("Firmware loaded successfully!\n");
+    printf("Ready for commands...\n");
+    
+    while(1) {
+        printf("Hello from ESP32!\n");
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
+    }
+}

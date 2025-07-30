@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ESP32 Hardware Tools
+Comment=Hardware interface for ESP32 SPI flash tools
+Exec=/home/indego/ESP32/esp32_bios_dumper/esp32_tools.sh
+Icon=applications-electronics
+Terminal=false
+Categories=Development;Electronics;
